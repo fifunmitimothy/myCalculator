@@ -1,0 +1,2 @@
+﻿# Project
+The project is building a simple calculator whereby it can be used to calculate figures. The project consist of a single html page, which has both the html, css and javascript code written on the single html page. It has a main-header. Furthermore, the page is responsive to the size of the screen. That is, if the page is opened on a mobile phone, the pictures will appear just fine and aligned. This was achieved using the class “col-lg-4 col-sm-6 col-xs-8” which made it responsive to the size of the screen.

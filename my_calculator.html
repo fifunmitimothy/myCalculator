@@ -1,0 +1,192 @@
+<HTML>
+<HEAD>
+<STYLE TYPE="TEXT/CSS">
+BODY
+{
+BACKGROUND-COLOR:rgb(8, 64, 116);
+TEXT-ALIGN:CENTER;
+}
+INPUT
+{
+FONT-SIZE:60PX;
+COLOR:rgb(218, 155, 20);
+BACKGROUND-COLOR:rgb(9, 10, 9);
+}
+INPUT:HOVER
+{
+BACKGROUND-COLOR:rgb(30, 30, 66);
+}
+
+</style>
+
+<SCRIPT TYPE="TEXT/JAVASCRIPT">
+var temp;
+var flag;
+function clr()
+{
+document.g.d.value=" ";
+}
+
+function t1()
+{
+document.g.d.value=document.g.d.value+"1";
+}
+
+function t2()
+{
+document.g.d.value=document.g.d.value+"2";
+}
+
+function t3()
+{
+document.g.d.value=document.g.d.value+"3";
+}
+
+function t4()
+{
+document.g.d.value=document.g.d.value+"4";
+}
+
+function t5()
+{
+document.g.d.value=document.g.d.value+"5";
+}
+
+function t6()
+{
+document.g.d.value=document.g.d.value+"6";
+}
+
+function t7()
+{
+document.g.d.value=document.g.d.value+"7";
+}
+
+function t8()
+{
+document.g.d.value=document.g.d.value+"8";
+}
+
+function t9()
+{
+document.g.d.value=document.g.d.value+"9";
+}
+
+function t0()
+{
+document.g.d.value=document.g.d.value+"0";
+}
+
+function t_dot()
+{
+document.g.d.value=document.g.d.value+".";
+}
+
+function add()
+{
+flag=1;
+temp=parseInt(document.g.d.value);
+document.g.d.value=" ";
+}
+
+function sub()
+{
+flag=2;
+temp=parseInt(document.g.d.value);
+document.g.d.value=" ";
+}
+
+function div()
+{
+flag=3;
+temp=parseInt(document.g.d.value);
+document.g.d.value=" ";
+}
+
+function mul()
+{
+flag=4;
+temp=parseInt(document.g.d.value);
+document.g.d.value=" ";
+}
+
+function rem()
+{
+flag=5;
+temp=parseInt(document.g.d.value);
+document.g.d.value=" ";
+}
+
+function result()
+{
+switch(flag)
+{ 
+case 1:document.g.d.value=temp+parseInt(document.g.d.value);
+break;
+case 2:document.g.d.value=temp-parseInt(document.g.d.value);
+break;
+case 3:document.g.d.value=temp/parseInt(document.g.d.value);
+break;
+case 4:document.g.d.value=temp*parseInt(document.g.d.value);
+break;
+case 5:document.g.d.value=temp%parseInt(document.g.d.value);
+break;
+}
+}
+
+</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+  
+        <BR><BR><BR><BR><BR><BR>
+        
+
+            <FORM NAME="g">
+            
+            <INPUT TYPE="TEXT" NAME="d" SIZE=12 DISABLED>
+            
+            
+            <TABLE BORDER="2"ALIGN="CENTER" CELLPADDING="3">
+            
+            <TR>
+            <TD><INPUT TYPE =BUTTON VALUE=" 1  " ONCLICK="t1()"></TD>
+            <TD><INPUT TYPE =BUTTON VALUE=" 2  " ONCLICK="t2()"></TD>
+            <TD><INPUT TYPE =BUTTON VALUE=" 3  " ONCLICK="t3()"></TD>
+            <TD><INPUT TYPE =BUTTON VALUE="  +  " ONCLICK="add()"></TD>
+            </TR>
+            
+            <TR>
+            <TD><INPUT TYPE =BUTTON VALUE=" 4  " ONCLICK="t4()"></TD>
+            <TD><INPUT TYPE =BUTTON VALUE=" 5  " ONCLICK="t5()"></TD>
+            <TD><INPUT TYPE =BUTTON VALUE=" 6  " ONCLICK="t6()"></TD>
+            <TD><INPUT TYPE =BUTTON VALUE="  -   " ONCLICK="sub()"></TD>
+            </TR>
+            
+            <TR>
+            <TD><INPUT TYPE =BUTTON VALUE=" 7  " ONCLICK="t7()"></TD>
+            <TD><INPUT TYPE =BUTTON VALUE=" 8  " ONCLICK="t8()"></TD>
+            <TD><INPUT TYPE =BUTTON VALUE=" 9  " ONCLICK="t9()"></TD>
+            <TD><INPUT TYPE =BUTTON VALUE="  ÷  " ONCLICK="div()"></TD>
+            </TR>
+            
+            <TR>
+            <TD><INPUT TYPE =BUTTON VALUE="  .  " ONCLICK="t_dot()"></TD>
+            <TD><INPUT TYPE =BUTTON VALUE=" 0  "  ONCLICK="t0()"></TD>
+            <TD><INPUT TYPE =BUTTON VALUE=" =  " ONCLICK="result()"></TD>
+            <TD><INPUT id="per" TYPE =BUTTON VALUE=" %  "  ONCLICK="rem()"></TD>
+            </TR>
+            
+            <TR>
+            <TD><INPUT TYPE =BUTTON VALUE=" C " = ONCLICK="clr()"></TD>
+            <TD><INPUT TYPE =BUTTON VALUE="CE" = ONCLICK="clr()"></INPUT></TD>
+            <TD><B><INPUT TYPE =BUTTON VALUE="     "  ONCLICK="mul()"></B></TD>
+            <TD><B><INPUT TYPE =BUTTON VALUE=" ×   "  ONCLICK="mul()"></B></TD>
+            </TR>
+            </TABLE>
+            </form>
+            
+
+
+</BODY>
+</HTML>
